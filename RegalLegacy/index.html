@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <!-- Ex. 1: Setarea doctype și limba documentului -->
+    <meta charset="UTF-8"> <!-- Ex. 2: Specificarea charset-ului -->
+    <meta name="author" content="Regal Legacy"> <!-- Specificarea autorului -->
+    <meta name="keywords" content="bijuterii, bijuterii de lux, bijuterii elegante, regal legacy, coliere, inele, brățări, ceasuri, ocazii speciale"> <!-- Cuvinte cheie -->
+    <meta name="description" content="Regal Legacy - Bijuterii elegante și de lux"> <!-- Descrierea site-ului -->
+    
+    <!-- Ex. 3: Adăugarea faviconurilor generate -->
+    <link rel="icon" type="image/png" sizes="48x48" href="resurse/ico/favicon-48x48.png">
+    <link rel="apple-touch-icon" href="resurse/ico/apple-touch-icon.png">
+    <link rel="manifest" href="resurse/ico/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#4A90E2">
+    
+    <title>Bijuterii Elegante și de Lux - Regal Legacy</title>
+</head>
+<body>
+    <!-- Ex. 4: Structurarea body-ului în header, main, footer -->
+    <header>
+        <h1>Regal Legacy</h1> <!-- Ex. 5: Titlul site-ului -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a>
+                    <!-- Ex. 6: Sistem de navigare cu submeniuri pentru "Acasă" -->
+                    <ul>
+                        <li><a href="#femei">Bijuterii pentru Femei</a></li>
+                        <li><a href="#barbati">Bijuterii pentru Bărbați</a></li>
+                        <li><a href="#ocazie">Bijuterii de Ocazie</a></li>
+                    </ul>
+                </li>
+                <li><a href="colectii.html">Colecții</a></li>
+                <li><a href="ocazii.html">Ocazii Speciale</a></li>
+                <li><a href="shop.html">Cumpărături</a></li>
+                <li><a href="despre.html">Despre Noi</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Ex. 7: Folosirea tagurilor de secționare, inclusiv imbricate -->
+        <section id="femei">
+            <h2>Bijuterii pentru Femei</h2>
+            <p><strong>Bijuterii pentru femei</strong> de cea mai înaltă calitate, de la coliere elegante la inele strălucitoare.</p> <!-- Ex. 8: Taguri de grupare: folosirea p și ul -->
+
+            <!-- Ex. 9: Imagine responsive cu figure și figcaption -->
+            <figure>
+                <picture>
+                    <source srcset="resurse/images/bijuterii-femei-small.jpg" media="(max-width: 600px)">
+                    <source srcset="resurse/images/bijuterii-femei-medium.jpg" media="(max-width: 1024px)">
+                    <img src="resurse/images/bijuterii-femei-large.jpg" alt="Bijuterii pentru femei">
+                </picture>
+                <figcaption>Eleganță autentică în fiecare piesă.</figcaption>
+            </figure>
+
+            <!-- Ex. 10: Marcați textul în 3 moduri diferite -->
+            <p><strong>Bijuterii pentru femei</strong> perfecte pentru evenimente deosebite. <em>Calitate și rafinament</em> în fiecare detaliu. Am inclus și <i>terminologia specifică industriei bijuteriilor</i>.</p>
+        </section>
+
+        <section id="barbati">
+            <h2>Bijuterii pentru Bărbați</h2>
+            <p>Descoperă <b>bijuteriile pentru bărbați</b> ale colecției noastre, incluzând brățări și ceasuri elegante.</p>
+
+            <!-- Ex. 11: Details și summary pentru informații suplimentare -->
+            <details>
+                <summary>Accesorii pentru Bărbați</summary>
+                <p>Ceasuri elegante și brățări din piele de calitate.</p>
+            </details>
+            <details>
+                <summary>Oferte Speciale</summary>
+                <p><strong>Reduceri</strong> de până la 30% la anumite produse.</p>
+            </details>
+        </section>
+
+        <section id="ocazie">
+            <h2>Bijuterii de Ocazie</h2>
+            <p>Bijuterii perfecte pentru <q>logodne și nunți</q>. <em>Fiecare piesă este unică</em>.</p>
+            
+            <!-- Ex. 12: Iframe și linkuri care se deschid în iframe -->
+            <iframe id="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/video_default" frameborder="0" allowfullscreen></iframe>
+            <a href="https://www.youtube.com/embed/video_1" target="iframe-video">Video despre logodne</a>
+            <a href="https://www.youtube.com/embed/video_2" target="iframe-video">Video despre nunți</a>
+
+            <!-- Ex. 13: Link extern către un alt site -->
+            <p>Vizitează <a href="https://www.example.com" target="_blank">pagina noastră parteneră</a> pentru mai multe informații.</p>
+
+            <!-- Ex. 14: Link de tip download -->
+            <p><a href="resurse/download/ghid-intretinere.txt" download="ghid-intretinere">Descarcă ghidul de întreținere pentru bijuterii</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Ex. 15: Footer cu informații de contact și copyright -->
+        <address>
+            <p>Telefon: <a href="tel:+40123456789">+40 123 456 789</a></p>
+            <p>Adresă: <a href="https://www.google.com/maps?q=Facultatea+de+Matematica+si+Informatica" target="_blank">Bd. Vasile Pârvan, Nr. 4</a></p>
+            <p>Email: <a href="mailto:contact@regallegacy.com">contact@regallegacy.com</a></p>
+            <p>Chat: <a href="skype:contact?chat">Skype</a></p>
+        </address>
+        <small>&copy; <time datetime="2024">2024</time> Regal Legacy. Toate drepturile rezervate.</small>
+        <a href="#top">Înapoi sus</a>
+    </footer>
+</body>
+</html>
